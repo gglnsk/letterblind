@@ -3,20 +3,38 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="letterblind.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <h1>letterblind</h1>
+        <div class="brand">
+            <h1>letterblind</h1><img src="../icons/eye-icon-vector.svg" alt="" class="brand-icon">
+        </div>
         <form id="toggles">
-            <input type="checkbox" id="hide_ratings">
-            <label for="hide_ratings"> hide ratings</label><br>
-            <input type="checkbox" id="hide_reviews">
-            <label for="hide_reviews"> hide reviews</label><br>
-            <input type="checkbox" id="hide_friend">
-            <label for="hide_friend"> hide friend activity</label><br>
+            <div class="grid">
+                <div></div>
+                <label class="column">never</label>
+                <label class="column">until watched</label>
+                <label class="column">until rated</label>
+                <label class="column">always</label>
+                <!-- -->
+                <label>hide ratings</label>
+                    <input type="radio" name="hide_ratings" value="0" checked>
+                    <input type="radio" name="hide_ratings" value="1">
+                    <input type="radio" name="hide_ratings" value="2">
+                    <input type="radio" name="hide_ratings" value="3">
+                <!-- -->
+                <label>hide reviews</label>
+                    <input type="radio" name="hide_reviews" value="0" checked>
+                    <input type="radio" name="hide_reviews" value="1">
+                    <input type="radio" name="hide_reviews" value="2">
+                    <input type="radio" name="hide_reviews" value="3">
+                <!-- -->
+                <label>hide friend activity</label>
+                    <input type="radio" name="hide_friend" value="0" checked>
+                    <input type="radio" name="hide_friend" value="1">
+                    <input type="radio" name="hide_friend" value="2">
+                    <input type="radio" name="hide_friend" value="3">
+            </div>
         </form>
         <p class="reload">reload page to see changes</p>
         <script src="popup.js"></script>

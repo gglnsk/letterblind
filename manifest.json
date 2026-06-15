@@ -1,18 +1,17 @@
 {
-    "description": "Hides Letterboxd average ratings and reviews for movies until you log them.",
+    "description": "Control when you see ratings, reviews, and friend activity on Letterboxd.",
     "manifest_version": 3,
-    "name": "Letterblind",
-    "version": "1.0",
+    "name": "letterblind",
+    "version": "1.1",
     "homepage_url": "https://github.com/gglnsk/letterblind",
-    "permissions": ["activeTab", "scripting", "storage"],
-    "host_permissions": ["https://letterboxd.com/*"],
+    "permissions": ["storage"],
     "icons": {
         "48": "icons/eye-icon-48.png",
         "96": "icons/eye-icon-96.png"
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "letterblind@gglnsk.com",
+            "id": "letterblind@letterblind",
             "data_collection_permissions": {
                 "required": ["none"]
             }
@@ -20,12 +19,13 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://letterboxd.com/*"],
-            "js": ["content.js"]
+            "matches": ["https://letterboxd.com/film/*"],
+            "js": ["content.js"],
+            "run_at": "document_start"
         }
     ],
     "action": {
-        "default_title": "Letterblind",
+        "default_title": "letterblind",
         "default_popup": "popup/letterblind.html"
     }
 }
