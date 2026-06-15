@@ -1,3 +1,13 @@
-<h1>letterblind</h1>
-<p>tired of the unwashed masses influencing your pure, intellectual opinion? languish no more! <i>letterblind</i> hides other people's opinions so you can form your opinion before you form opinions about opinions.</p>
-<img width="367" height="247" alt="image" src="https://github.com/user-attachments/assets/89771e45-6aac-43ae-959d-93522d3bb51c"/>
+# letterblind: a browser extension for letterboxd  
+tired of the unwashed masses influencing your film ratings? languish no more! *letterblind* hides other people's opinions so you can form your opinions before you form opinions about opinions.  
+&nbsp;  
+<img width="528" height="177" alt="image" src="https://github.com/user-attachments/assets/c7ecd764-78bb-45f5-9c0d-1bc9eac61886" /><br>
+## how it works  
+for each element, choose when to hide it:  
+
+- **never** - always visible  
+- **until watched** - hidden until you log the film  
+- **until rated** - hidden until you rate it  
+- **always** - always hidden  
+<img width="1560" height="1367" alt="screenshot of film page before logging" src="https://github.com/user-attachments/assets/d024ea73-4109-440a-8bed-453c2ac26ded" />
+<img width="1560" height="1367" alt="screenshot of film page after logging" src="https://github.com/user-attachments/assets/414cb774-2419-4a28-9ea6-1833d7da1092" />
